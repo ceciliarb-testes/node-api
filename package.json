@@ -2,8 +2,9 @@
   "name": "@prodabel/geo-test",
   "version": "1.0.0",
   "description": "Prototipo de API Rest para o GEO",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,8 +15,16 @@
   "author": "Cecilia Brzezina",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "dotenv": "^8.2.0",
-    "node-pre-gyp": "^0.12.0",
-    "oracledb": "^4.2.0"
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "oracledb": "^4.2.0",
+    "winston": "^3.2.1",
+    "winston-papertrail": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
   }
 }
